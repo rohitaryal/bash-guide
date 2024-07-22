@@ -1001,6 +1001,14 @@ echo $str   # hello world
 ### a. `$!`
 Expands to the PID (Process ID) of the most recent job placed into background.
 
+Example:
+```bash
+$ sleep 20 &
+[1] 30969 # PID
+$ echo $!
+30969
+```
+
 ### b. `$@`
 Expands to the positional parameters passed to script/function.
 
